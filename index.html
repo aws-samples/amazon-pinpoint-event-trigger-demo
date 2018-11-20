@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Amazon Pinpoint Event Trigger Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            html, body { font-family: "Amazon Ember", "Helvetica", "sans-serif"; margin: 0; }
+            h1 { font-weight: 300; }
+            .app { width: 100%; }
+            .app-header { color: white; text-align: center; background: #5a5d61; width: 100%; margin: 0 0 1em 0; padding: 3em 0 3em 0; }
+            .app-body { width: 500px; margin: 0 auto; }
+            .app-body div { font-size: 14px; text-transform: uppercase; padding: 1em; border: none; width: 100%; text-align: center; }
+	    .header { text-align: right; }
+	    .field { text-align: left; }
+            button:hover { opacity: 0.8; }
+        </style>
+    </head>
+    <body>
+        <div class="app">
+            <div class="app-header">
+                <h1>Amazon Pinpoint Event Segmentation Demo</h1>
+            </div>
+            <div class="app-body">
+	      <div>
+		<table>
+		  <tr>
+		    <td class="header">Role</td>
+		    <td class="field">
+		      <select id="Role">
+			<option>Engineer</option>
+			<option>QA</option>
+			<option>Manager</option>
+			<option>Executive</option>
+			<option>Marketer</option>
+			<option>Other</option>
+		      </select>
+		    </td>
+		  </tr>
+		  <tr>
+		    <td class="header">
+		      Email or phone number
+		    </td>
+		    <td class="field">
+		      <input id="Address" type="text"/>
+		    </td>
+		  </tr>
+		</table>
+		<button id="RegisterButton">Register Endpoint</button>
+	      </div>
+
+	      <div>
+		<button id="EventButton">Generate Event</button>
+	      </div>
+	      
+	      <div id="Result"></div>
+            </div>
+        </div>
+        <script src="main.bundle.js"></script>
+    </body>
+</html>
