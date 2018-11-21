@@ -1,2 +1,8 @@
 *~
 #*
+.amplifyrc
+amplify/
+dist/
+node_modules/
+src/aws-exports.js
+package-lock.json
