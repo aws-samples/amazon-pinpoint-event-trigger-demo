@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AWS Pinpoint demo</title>
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<header>
+    <h1>AWS Pinpoint Event Trigger Demo</h1>
+</header>
+<section class="container">
+    <article class="two-grid-item">
+        <h2>Register endpoints</h2>
+        <div class="inner-container">
+            <form id="register-form">
+                <div class="divider">
+                    <div class="padding-below">
+                        <p><label for="name-input">Name</label></p>
+                        <input id="name-input" type="text" name="Name" placeholder="Name" required>
+                    </div>
+                    <div class="padding-below">
+                        <p><label for="role-select">Select your role</label></p>
+                        <select id="role-select" name="Role">
+                            <option value="engineer">Engineer</option>
+                            <option value="manager">Manager</option>
+                            <option value="qa">QA</option>
+                            <option value="executive">Executive</option>
+                            <option value="market">Marketer</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <p class="padding-below-small">Select an address type</p>
+                    <div>
+                        <input id="phone" type="radio" name="Address" value="Phone" checked>
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div>
+                        <input id="email" type="radio" name="Address" value="Email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="phone-input padding-above">
+                        <p><label for="phone-input">Enter your phone number</label></p>
+                        <input id="phone-input" maxlength="10" name="Phone" placeholder="4254450382" type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </div>
+                    <div class="email-input padding-above hidden">
+                        <p><label for="email-input">Enter your email address</label></p>
+                        <input id="email-input" name="Email" placeholder="example@example.com" type="email">
+                    </div>
+                    <div>
+                        <button type="submit">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </article>
+    <article class="two-grid-item">
+        <h2>Send events</h2>
+        <div class="inner-container">
+            <form id="event-form">
+                <div>
+                    <p>Send an event to Pinpoint</p>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </article>
+</section>
+<script src="main.bundle.js"></script>
+</body>
+</html>
